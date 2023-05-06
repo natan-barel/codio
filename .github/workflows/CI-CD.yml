@@ -11,3 +11,9 @@ jobs:
       run: yarn
     - name: Build
       run: yarn build
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with: 
+        name: assets
+        path: dist
+
